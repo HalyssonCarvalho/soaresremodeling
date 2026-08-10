@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soares Remodeling | Home Remodeling & Construction in South Florida</title>
+<meta name="description" content="Transform your home with Soares Remodeling. Kitchen remodeling, bathroom remodeling, flooring, painting and construction services backed by 20 years serving South Florida. Licensed & insured. Request a free estimate.">
+<meta name="theme-color" content="#0B1F3A">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Soares Remodeling | Home Remodeling & Construction in South Florida">
+<meta property="og:description" content="20 years serving South Florida. Kitchens, bathrooms, flooring, painting, full remodels & new construction. Licensed & insured. Free estimates.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://www.soaresremodeling.com/">
+
+<!-- Fonts: Fraunces (display / architectural serif), Inter (body/UI), IBM Plex Mono (spec labels & data) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org structured data — ONLY verified information. No invented license #, reviews, or awards. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Soares Remodeling",
+  "telephone": "+1-954-829-4117",
+  "email": "soares1975@icloud.com",
+  "areaServed": "South Florida",
+  "sameAs": ["https://www.instagram.com/Soaresremodeling"],
+  "priceRange": "$$-$$$",
+  "description": "Home remodeling and construction company serving South Florida for 20 years. Kitchen remodeling, bathroom remodeling, flooring, painting, complete home remodeling and new construction."
+}
+</script>
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root{
+  --navy-900:#0B1F3A;
+  --navy-800:#122A4D;
+  --navy-700:#1C3B65;
+  --navy-600:#2A4E80;
+  --red-600:#C8102E;
+  --red-700:#A20E27;
+  --red-050:#FBEBEC;
+  --white:#FFFFFF;
+  --gray-50:#F1F2F5;
+  --gray-100:#E7E9EE;
+  --gray-200:#D8DCE3;
+  --ink:#131722;
+  --ink-soft:#4A5266;
+  --line:#DDE1E8;
+
+  --font-display:'Fraunces', Georgia, serif;
+  --font-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+
+  --radius-sm:4px;
+  --radius-md:8px;
+  --radius-lg:14px;
+
+  --shadow-sm:0 1px 2px rgba(11,31,58,.06), 0 1px 1px rgba(11,31,58,.04);
+  --shadow-md:0 8px 24px rgba(11,31,58,.10);
+  --shadow-lg:0 20px 48px rgba(11,31,58,.16);
+
+  --header-h:84px;
+  --header-h-compact:64px;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important;}
+}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--white);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+  padding-bottom:64px; /* room for mobile sticky bar */
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0;font-weight:600;letter-spacing:-0.01em;}
+p{margin:0;}
+:focus-visible{outline:2px solid var(--red-600);outline-offset:3px;}
+.container{max-width:1240px;margin:0 auto;padding:0 24px;}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--red-600);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--red-600);}
+.section{padding:96px 0;}
+@media (max-width:768px){ .section{padding:64px 0;} }
+.section-head{max-width:640px;margin-bottom:52px;}
+.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.12;color:var(--navy-900);}
+.section-head p{margin-top:16px;font-size:17px;color:var(--ink-soft);}
+.section--dark{background:var(--navy-900);color:var(--white);}
+.section--dark .section-head h2{color:var(--white);}
+.section--dark .section-head p{color:#B9C3D6;}
+.section--paper{background:var(--gray-50);}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:var(--font-body);font-weight:700;font-size:14.5px;letter-spacing:.02em;
+  padding:15px 26px;border-radius:3px;border:1.5px solid transparent;
+  transition:transform .15s ease, box-shadow .15s ease, background-color .15s ease, border-color .15s ease, color .15s ease;
+  white-space:nowrap;
+}
+.btn:active{transform:translateY(1px);}
+.btn-red{background:var(--red-600);color:var(--white);box-shadow:var(--shadow-sm);}
+.btn-red:hover{background:var(--red-700);box-shadow:var(--shadow-md);}
+.btn-navy{background:var(--navy-900);color:var(--white);}
+.btn-navy:hover{background:var(--navy-700);}
+.btn-outline{background:transparent;color:var(--navy-900);border-color:var(--navy-900);}
+.btn-outline:hover{background:var(--navy-900);color:var(--white);}
+.btn-outline-light{background:transparent;color:var(--white);border-color:rgba(255,255,255,.55);}
+.btn-outline-light:hover{background:var(--white);color:var(--navy-900);border-color:var(--white);}
+.btn-ghost{background:transparent;color:var(--navy-900);padding:15px 8px;}
+.btn-ghost:hover{color:var(--red-600);}
+.btn-sm{padding:10px 16px;font-size:13px;}
+.btn-block{width:100%;}
+.btn svg{flex-shrink:0;}
+
+/* Blueprint corner marker — signature element */
+.blueprint{position:relative;}
+.blueprint::before,.blueprint::after,
+.blueprint .bp-tl,.blueprint .bp-br{
+  content:"";position:absolute;width:18px;height:18px;pointer-events:none;z-index:2;
+  border-color:var(--white);
+}
+.blueprint::before{top:10px;left:10px;border-top:2px solid var(--white);border-left:2px solid var(--white);}
+.blueprint::after{bottom:10px;right:10px;border-bottom:2px solid var(--white);border-right:2px solid var(--white);}
+.blueprint.blueprint--dark::before,.blueprint.blueprint--dark::after{border-color:var(--navy-900);}
+
+/* Dimension-line divider */
+.dim-divider{display:flex;align-items:center;gap:10px;color:var(--ink-soft);font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;}
+.dim-divider::before,.dim-divider::after{content:"";flex:1;height:1px;background:var(--line);}
+.dim-divider .dot{width:5px;height:5px;border-radius:50%;background:var(--red-600);}
+
+/* Placeholder photo tile — clearly replaceable demo imagery */
+.photo-tile{
+  position:relative;overflow:hidden;border-radius:var(--radius-md);
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.04) 0 2px, transparent 2px 22px),
+    linear-gradient(155deg, var(--navy-800), var(--navy-900) 70%);
+  display:flex;align-items:flex-end;color:#fff;min-height:220px;
+}
+.photo-tile .tile-label{
+  position:relative;z-index:2;padding:18px;font-family:var(--font-mono);font-size:12px;
+  letter-spacing:.04em;color:#CBD5E6;line-height:1.5;
+}
+.photo-tile .tile-label b{display:block;color:#fff;font-family:var(--font-body);font-size:14px;font-weight:700;margin-bottom:2px;}
+.photo-tile .tile-icon{position:absolute;top:16px;right:16px;opacity:.55;z-index:2;}
+.photo-tile.light{background:
+    repeating-linear-gradient(135deg, rgba(11,31,58,.035) 0 2px, transparent 2px 22px),
+    linear-gradient(155deg,#EEF0F5,#DFE3EB 75%);color:var(--navy-900);}
+.photo-tile.light .tile-label{color:var(--ink-soft);}
+.photo-tile.light .tile-label b{color:var(--navy-900);}
+.photo-tile.light .tile-icon{opacity:.35;}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+header.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  height:var(--header-h);
+  background:rgba(11,31,58,.0);
+  transition:height .25s ease, background .25s ease, box-shadow .25s ease;
+}
+header.site-header.is-solid{
+  height:var(--header-h-compact);
+  background:var(--navy-900);
+  box-shadow:0 4px 24px rgba(0,0,0,.18);
+}
+header.site-header .bar{
+  max-width:1240px;margin:0 auto;padding:0 24px;height:100%;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.logo{display:flex;flex-direction:column;line-height:1;color:#fff;}
+.logo .name{font-family:var(--font-display);font-weight:700;font-size:19px;letter-spacing:.01em;}
+.logo .tag{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;color:var(--red-600);margin-top:4px;}
+nav.main-nav{display:flex;align-items:center;gap:34px;}
+nav.main-nav a{color:#E4E8F0;font-size:14px;font-weight:600;letter-spacing:.01em;position:relative;padding:4px 0;}
+nav.main-nav a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:2px;background:var(--red-600);transition:width .2s ease;}
+nav.main-nav a:hover{color:#fff;}
+nav.main-nav a:hover::after{width:100%;}
+.header-actions{display:flex;align-items:center;gap:14px;}
+.header-actions .btn-call{
+  display:flex;align-items:center;gap:8px;color:#fff;font-size:13.5px;font-weight:600;font-family:var(--font-mono);
+}
+.nav-toggle{display:none;background:none;border:none;padding:8px;color:#fff;}
+@media (max-width:960px){
+  nav.main-nav{display:none;}
+  .header-actions .btn-call span{display:none;}
+  .nav-toggle{display:flex;}
+}
+
+/* Mobile menu drawer */
+.mobile-drawer{
+  position:fixed;inset:0;z-index:1000;background:var(--navy-900);
+  transform:translateX(100%);transition:transform .3s ease;
+  display:flex;flex-direction:column;padding:24px;
+}
+.mobile-drawer.open{transform:translateX(0);}
+.mobile-drawer .drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;}
+.mobile-drawer nav{display:flex;flex-direction:column;gap:6px;}
+.mobile-drawer nav a{color:#fff;font-family:var(--font-display);font-size:26px;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.1);}
+.mobile-drawer .drawer-actions{margin-top:auto;display:flex;flex-direction:column;gap:12px;}
+.mobile-drawer .close-btn{background:none;border:none;color:#fff;padding:8px;}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;background:var(--navy-900);color:#fff;
+  padding:calc(var(--header-h) + 96px) 0 110px;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 80% 60% at 70% 30%, black 10%, transparent 75%);
+  pointer-events:none;
+}
+.hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
+.hero-copy .eyebrow{color:var(--red-600);}
+.hero h1{
+  font-size:clamp(38px,5.4vw,68px);line-height:1.03;letter-spacing:-0.015em;
+  color:#fff;
+}
+.hero h1 em{font-style:normal;color:#8CA2C4;}
+.hero-sub{margin-top:22px;font-size:18px;color:#C4CDDD;max-width:480px;line-height:1.6;}
+.trust-inline{display:flex;flex-wrap:wrap;gap:22px;margin-top:30px;}
+.trust-inline .item{display:flex;align-items:center;gap:8px;font-size:13.5px;color:#DCE3EE;font-weight:600;}
+.trust-inline svg{color:var(--red-600);flex-shrink:0;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;}
+.hero-ai-cta{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:14.5px;padding:15px 4px;}
+.hero-ai-cta .dot{width:8px;height:8px;border-radius:50%;background:#38D68C;box-shadow:0 0 0 4px rgba(56,214,140,.18);}
+.hero-visual{position:relative;}
+.hero-visual .photo-tile{min-height:460px;box-shadow:var(--shadow-lg);}
+.hero-visual .stat-chip{
+  position:absolute;left:-26px;bottom:-26px;background:#fff;color:var(--navy-900);
+  padding:22px 26px;border-radius:var(--radius-md);box-shadow:var(--shadow-lg);
+  display:flex;align-items:center;gap:16px;z-index:3;
+}
+.stat-chip .num{font-family:var(--font-display);font-size:34px;font-weight:700;color:var(--navy-900);}
+.stat-chip .label{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-soft);text-transform:uppercase;max-width:110px;line-height:1.4;}
+@media (max-width:960px){
+  .hero .container{grid-template-columns:1fr;gap:44px;}
+  .hero-visual .stat-chip{left:16px;bottom:-22px;padding:16px 18px;}
+}
+@media (max-width:600px){
+  .hero{padding:calc(var(--header-h-compact) + 56px) 0 80px;}
+  .trust-inline{gap:14px 20px;}
+}
+
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar{background:var(--white);border-bottom:1px solid var(--line);}
+.trust-bar .container{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  padding:34px 24px;
+}
+.trust-bar .t-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:0 12px;border-left:1px solid var(--line);}
+.trust-bar .t-item:first-child{border-left:none;}
+.trust-bar .t-item svg{color:var(--red-600);}
+.trust-bar .t-item span{font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;font-weight:600;color:var(--navy-900);text-transform:uppercase;}
+@media (max-width:768px){
+  .trust-bar .container{grid-template-columns:repeat(2,1fr);row-gap:24px;}
+  .trust-bar .t-item:nth-child(3){border-left:none;}
+}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+@media (max-width:960px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:640px){.services-grid{grid-template-columns:1fr;}}
+.service-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;
+  transition:transform .2s ease, box-shadow .2s ease;display:flex;flex-direction:column;
+}
+.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.service-card .photo-tile{min-height:180px;border-radius:0;}
+.service-card .sc-body{padding:24px 22px 22px;display:flex;flex-direction:column;gap:14px;flex:1;}
+.service-card h3{font-size:19px;color:var(--navy-900);}
+.service-card p{font-size:14.5px;color:var(--ink-soft);line-height:1.55;flex:1;}
+.sc-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px;}
+.sc-actions .btn{padding:10px 14px;font-size:12.5px;}
+.sc-ask-ai{display:flex;align-items:center;gap:7px;background:var(--gray-50);color:var(--navy-900);border:1px solid var(--line);}
+.sc-ask-ai:hover{background:var(--navy-900);color:#fff;border-color:var(--navy-900);}
+
+/* ============================================================
+   EXPERIENCE (20 years)
+   ============================================================ */
+.experience{background:var(--navy-900);color:#fff;position:relative;overflow:hidden;}
+.experience .container{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;}
+.experience .years-num{
+  font-family:var(--font-display);font-weight:700;font-size:clamp(84px,11vw,160px);line-height:.85;color:#fff;letter-spacing:-.02em;
+}
+.experience .years-sub{font-family:var(--font-mono);font-size:14px;letter-spacing:.14em;color:var(--red-600);text-transform:uppercase;margin-top:10px;}
+.experience-copy p{color:#C4CDDD;font-size:17px;line-height:1.7;margin-bottom:18px;}
+.experience-copy .btn{margin-top:8px;}
+@media (max-width:900px){.experience .container{grid-template-columns:1fr;gap:30px;text-align:left;}}
+
+/* ============================================================
+   PORTFOLIO
+   ============================================================ */
+.filter-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;}
+.filter-btn{
+  padding:9px 18px;border-radius:30px;border:1px solid var(--line);background:#fff;
+  font-size:13px;font-weight:600;color:var(--ink-soft);transition:all .15s ease;
+}
+.filter-btn.active,.filter-btn:hover{background:var(--navy-900);color:#fff;border-color:var(--navy-900);}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.portfolio-grid .p-item:nth-child(3n+1){grid-row:span 2;}
+@media (max-width:900px){.portfolio-grid{grid-template-columns:repeat(2,1fr);} .portfolio-grid .p-item:nth-child(3n+1){grid-row:span 1;}}
+@media (max-width:600px){.portfolio-grid{grid-template-columns:1fr;}}
+.p-item{cursor:pointer;position:relative;border-radius:var(--radius-md);overflow:hidden;height:100%;}
+.p-item .photo-tile{height:100%;min-height:230px;}
+.p-item .p-overlay{
+  position:absolute;inset:0;background:linear-gradient(180deg, rgba(11,31,58,0) 40%, rgba(11,31,58,.88) 100%);
+  display:flex;align-items:flex-end;padding:20px;opacity:0;transition:opacity .2s ease;z-index:3;
+}
+.p-item:hover .p-overlay{opacity:1;}
+.p-item .p-overlay .ptxt b{display:block;color:#fff;font-family:var(--font-body);font-weight:700;font-size:15px;}
+.p-item .p-overlay .ptxt span{font-family:var(--font-mono);font-size:11.5px;color:var(--red-050);}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(9,17,32,.92);z-index:1200;display:none;align-items:center;justify-content:center;padding:24px;}
+.lightbox.open{display:flex;}
+.lightbox-card{background:#fff;border-radius:var(--radius-lg);max-width:760px;width:100%;max-height:88vh;overflow:auto;}
+.lightbox-card .photo-tile{min-height:280px;border-radius:0;}
+.lightbox-body{padding:28px 30px 30px;}
+.lightbox-body h3{font-size:24px;color:var(--navy-900);margin-bottom:6px;}
+.lightbox-body .lb-meta{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-soft);margin-bottom:16px;}
+.lightbox-body p{color:var(--ink-soft);font-size:15px;line-height:1.65;}
+.lightbox-close{position:sticky;top:14px;float:right;margin:14px 14px 0 0;background:rgba(11,31,58,.7);color:#fff;border:none;border-radius:50%;width:34px;height:34px;display:flex;align-items:center;justify-content:center;}
+
+/* ============================================================
+   BEFORE / AFTER
+   ============================================================ */
+.ba-wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:26px;}
+@media (max-width:800px){.ba-wrap{grid-template-columns:1fr;}}
+.ba-slider{position:relative;border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm);aspect-ratio:4/3;user-select:none;}
+.ba-slider .ba-layer{position:absolute;inset:0;}
+.ba-slider .ba-after{}
+.ba-slider .ba-before{clip-path:inset(0 50% 0 0);}
+.ba-slider .ba-tag{position:absolute;top:14px;font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;padding:5px 10px;border-radius:3px;color:#fff;z-index:4;}
+.ba-slider .ba-tag.before-tag{left:14px;background:var(--navy-900);}
+.ba-slider .ba-tag.after-tag{right:14px;background:var(--red-600);}
+.ba-handle{
+  position:absolute;top:0;bottom:0;left:50%;width:0;transform:translateX(-50%);
+  cursor:ew-resize;z-index:5;
+}
+.ba-handle::before{content:"";position:absolute;top:0;bottom:0;left:0;width:3px;background:#fff;transform:translateX(-50%);box-shadow:0 0 0 1px rgba(0,0,0,.15);}
+.ba-handle .grip{
+  position:absolute;top:50%;left:0;transform:translate(-50%,-50%);
+  width:44px;height:44px;border-radius:50%;background:#fff;box-shadow:var(--shadow-md);
+  display:flex;align-items:center;justify-content:center;color:var(--navy-900);
+}
+.ba-caption{padding:14px 4px 0;font-size:13.5px;color:var(--ink-soft);}
+.ba-caption b{color:var(--navy-900);}
+
+/* ============================================================
+   WHY CHOOSE US
+   ============================================================ */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;}
+@media (max-width:900px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.why-grid{grid-template-columns:1fr;}}
+.why-card{background:#fff;padding:34px 28px;display:flex;flex-direction:column;gap:14px;}
+.why-card svg{color:var(--red-600);}
+.why-card h3{font-size:17px;color:var(--navy-900);}
+.why-card p{font-size:14px;color:var(--ink-soft);line-height:1.6;}
+
+/* ============================================================
+   PROCESS
+   ============================================================ */
+.process-track{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:22px;}
+.process-track::before{
+  content:"";position:absolute;top:27px;left:6%;right:6%;height:1px;
+  background:repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 12px);
+  z-index:0;
+}
+@media (max-width:900px){.process-track{grid-template-columns:repeat(2,1fr);} .process-track::before{display:none;}}
+@media (max-width:560px){.process-track{grid-template-columns:1fr;}}
+.process-step{position:relative;z-index:1;display:flex;flex-direction:column;gap:14px;}
+.step-num{
+  width:54px;height:54px;border-radius:50%;background:var(--navy-900);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:15px;font-weight:600;
+}
+.process-step h3{font-size:16.5px;color:var(--navy-900);}
+.process-step p{font-size:13.5px;color:var(--ink-soft);line-height:1.55;}
+.process-cta{margin-top:52px;text-align:center;}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+.testi-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);padding:26px;display:flex;flex-direction:column;gap:14px;}
+.testi-card .stars{color:var(--red-600);display:flex;gap:3px;}
+.testi-card p{font-size:14.5px;color:var(--ink-soft);line-height:1.6;font-style:italic;}
+.testi-foot{display:flex;align-items:center;gap:12px;margin-top:6px;}
+.testi-avatar{width:38px;height:38px;border-radius:50%;background:var(--gray-100);display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);}
+.testi-foot b{font-size:13.5px;color:var(--navy-900);display:block;}
+.testi-foot span{font-size:12px;color:var(--ink-soft);}
+.testi-card.placeholder{border:1.5px dashed var(--gray-200);background:var(--gray-50);align-items:flex-start;justify-content:center;min-height:210px;}
+.testi-card.placeholder .ph-badge{font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-soft);text-transform:uppercase;background:#fff;border:1px solid var(--line);padding:4px 10px;border-radius:20px;}
+.google-badge{display:flex;align-items:center;gap:14px;margin-bottom:32px;padding:16px 20px;border:1px solid var(--line);border-radius:var(--radius-md);background:#fff;max-width:420px;}
+.google-badge .g-score{font-family:var(--font-display);font-size:30px;color:var(--navy-900);}
+.google-badge .g-meta{font-size:12.5px;color:var(--ink-soft);}
+.google-badge .g-meta b{display:block;color:var(--navy-900);font-family:var(--font-body);font-size:13px;}
+
+/* ============================================================
+   SERVICE AREA
+   ============================================================ */
+.area-wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+@media (max-width:860px){.area-wrap{grid-template-columns:1fr;}}
+.area-copy p{color:var(--ink-soft);font-size:16px;line-height:1.7;margin-bottom:22px;}
+.area-tags{display:flex;flex-wrap:wrap;gap:10px;}
+.area-tag{font-family:var(--font-mono);font-size:12px;padding:8px 14px;border:1px solid var(--line);border-radius:30px;color:var(--navy-900);}
+.area-visual{position:relative;aspect-ratio:1/1;border-radius:var(--radius-lg);overflow:hidden;background:var(--navy-900);}
+.area-visual svg{width:100%;height:100%;}
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.final-cta{background:var(--navy-900);color:#fff;text-align:center;padding:100px 0;position:relative;overflow:hidden;}
+.final-cta::before{
+  content:"";position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size:56px 56px; mask-image:radial-gradient(ellipse 70% 90% at 50% 50%, black 0%, transparent 80%);
+}
+.final-cta .container{position:relative;z-index:1;}
+.final-cta h2{font-size:clamp(30px,5vw,48px);max-width:680px;margin:0 auto;color:#fff;}
+.final-cta p{margin-top:16px;color:#C4CDDD;font-size:17px;}
+.final-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:38px;}
+
+/* ============================================================
+   LEAD FORM
+   ============================================================ */
+.form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:flex-start;}
+@media (max-width:900px){.form-wrap{grid-template-columns:1fr;gap:36px;}}
+.lead-form{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:30px;box-shadow:var(--shadow-sm);}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:12.5px;font-weight:700;color:var(--navy-900);margin-bottom:7px;letter-spacing:.02em;}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 14px;border:1.5px solid var(--gray-200);border-radius:6px;font-family:var(--font-body);
+  font-size:14.5px;color:var(--ink);background:#fff;transition:border-color .15s ease;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--navy-700);outline:none;}
+.field.error input,.field.error select,.field.error textarea{border-color:var(--red-600);}
+.field .err-msg{display:none;color:var(--red-600);font-size:12px;margin-top:6px;}
+.field.error .err-msg{display:block;}
+.field textarea{resize:vertical;min-height:100px;}
+.form-status{display:none;padding:14px 16px;border-radius:8px;font-size:14px;margin-bottom:18px;align-items:center;gap:10px;}
+.form-status.success{display:flex;background:#EAF7EF;color:#166A3C;border:1px solid #BFE6CE;}
+.form-status.error{display:flex;background:var(--red-050);color:var(--red-700);border:1px solid #F2C4CB;}
+.form-note{font-size:12px;color:var(--ink-soft);margin-top:14px;line-height:1.5;}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer.site-footer{background:var(--navy-900);color:#C4CDDD;padding:70px 0 30px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.12);}
+@media (max-width:800px){.footer-grid{grid-template-columns:1fr;gap:34px;}}
+.footer-brand .name{font-family:var(--font-display);font-size:22px;color:#fff;font-weight:700;}
+.footer-brand p{margin-top:12px;font-size:14px;line-height:1.7;max-width:300px;}
+.footer-col h4{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8CA2C4;margin-bottom:16px;}
+.footer-col a,.footer-col p{display:block;font-size:14px;margin-bottom:11px;color:#C4CDDD;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:26px;font-size:12.5px;color:#7C8AA6;}
+.footer-bottom a{color:#7C8AA6;}
+.footer-bottom a:hover{color:#fff;}
+
+/* ============================================================
+   MOBILE STICKY BAR
+   ============================================================ */
+.mobile-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:850;
+  display:none;
+  background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(11,31,58,.10);
+  padding:8px calc(8px + env(safe-area-inset-left)) calc(8px + env(safe-area-inset-bottom)) calc(8px + env(safe-area-inset-right));
+}
+.mobile-bar .mb-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+.mobile-bar a,.mobile-bar button{
+  display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 4px;border-radius:8px;
+  background:none;border:none;color:var(--navy-900);font-size:11px;font-weight:700;font-family:var(--font-body);
+}
+.mobile-bar .mb-primary{background:var(--red-600);color:#fff;}
+@media (max-width:760px){.mobile-bar{display:block;} body{padding-bottom:78px;}}
+
+/* ============================================================
+   AI CHAT WIDGET
+   ============================================================ */
+.ai-launcher{
+  position:fixed;right:26px;bottom:26px;z-index:950;
+  display:flex;align-items:center;gap:10px;background:var(--navy-900);color:#fff;
+  padding:15px 20px 15px 15px;border-radius:40px;box-shadow:var(--shadow-lg);border:none;
+  transition:transform .2s ease;
+}
+.ai-launcher:hover{transform:translateY(-3px);}
+.ai-launcher .ai-ico{width:34px;height:34px;border-radius:50%;background:var(--red-600);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ai-launcher .ai-text{display:flex;flex-direction:column;align-items:flex-start;line-height:1.25;}
+.ai-launcher .ai-text b{font-size:13px;}
+.ai-launcher .ai-text span{font-size:10.5px;color:#9FB0CC;font-family:var(--font-mono);}
+.ai-launcher .pulse{width:8px;height:8px;border-radius:50%;background:#38D68C;box-shadow:0 0 0 4px rgba(56,214,140,.2);margin-left:2px;}
+@media (max-width:760px){
+  .ai-launcher{right:16px;bottom:88px;padding:13px;border-radius:50%;}
+  .ai-launcher .ai-text{display:none;}
+}
+
+.proactive-bubble{
+  position:fixed;right:26px;bottom:96px;z-index:940;max-width:250px;background:#fff;border:1px solid var(--line);
+  border-radius:14px 14px 4px 14px;box-shadow:var(--shadow-md);padding:16px 18px;display:none;
+}
+.proactive-bubble.show{display:block;animation:floatIn .3s ease;}
+@keyframes floatIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.proactive-bubble p{font-size:13.5px;color:var(--ink);line-height:1.5;}
+.proactive-bubble .pb-close{position:absolute;top:6px;right:8px;background:none;border:none;color:var(--ink-soft);font-size:16px;padding:4px;}
+@media (max-width:760px){.proactive-bubble{right:16px;bottom:156px;}}
+
+.ai-panel{
+  position:fixed;right:26px;bottom:26px;z-index:960;width:392px;max-width:calc(100vw - 32px);
+  height:min(640px, calc(100vh - 90px));background:#fff;border-radius:16px;box-shadow:var(--shadow-lg);
+  display:none;flex-direction:column;overflow:hidden;
+}
+.ai-panel.open{display:flex;}
+@media (max-width:760px){
+  .ai-panel{right:0;left:0;bottom:0;width:100%;max-width:100%;height:100vh;height:100dvh;border-radius:0;}
+}
+.ai-head{background:var(--navy-900);color:#fff;padding:18px 18px 16px;display:flex;align-items:center;gap:12px;flex-shrink:0;}
+.ai-head .ai-ico{width:38px;height:38px;border-radius:50%;background:var(--red-600);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ai-head .ai-meta{flex:1;line-height:1.3;}
+.ai-head .ai-meta b{font-size:14.5px;display:block;}
+.ai-head .ai-meta .status{font-size:11.5px;color:#9FDDBB;display:flex;align-items:center;gap:5px;font-family:var(--font-mono);}
+.ai-head .ai-meta .status .d{width:6px;height:6px;border-radius:50%;background:#38D68C;}
+.ai-head button.ai-close{background:rgba(255,255,255,.12);border:none;color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+.ai-body{flex:1;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:12px;background:var(--gray-50);}
+.msg{max-width:86%;padding:11px 14px;border-radius:14px;font-size:14px;line-height:1.5;animation:floatIn .25s ease;}
+.msg.bot{background:#fff;color:var(--ink);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px;}
+.msg.user{background:var(--navy-900);color:#fff;align-self:flex-end;border-bottom-right-radius:4px;}
+.msg-typing{display:flex;gap:4px;align-self:flex-start;background:#fff;border:1px solid var(--line);padding:13px 16px;border-radius:14px;border-bottom-left-radius:4px;}
+.msg-typing span{width:6px;height:6px;border-radius:50%;background:#B7C0D1;animation:blink 1.2s infinite ease-in-out;}
+.msg-typing span:nth-child(2){animation-delay:.15s;}
+.msg-typing span:nth-child(3){animation-delay:.3s;}
+@keyframes blink{0%,80%,100%{opacity:.3;}40%{opacity:1;}}
+
+.quick-replies{display:flex;flex-wrap:wrap;gap:8px;align-self:flex-start;max-width:100%;}
+.qr-btn{
+  background:#fff;border:1.5px solid var(--navy-900);color:var(--navy-900);padding:9px 14px;border-radius:20px;
+  font-size:13px;font-weight:600;transition:all .15s ease;
+}
+.qr-btn:hover{background:var(--navy-900);color:#fff;}
+.qr-btn.qr-red{border-color:var(--red-600);color:var(--red-600);}
+.qr-btn.qr-red:hover{background:var(--red-600);color:#fff;}
+
+.wa-handoff-card{
+  align-self:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;max-width:92%;
+}
+.wa-handoff-card p{font-size:13.5px;color:var(--ink-soft);margin-bottom:12px;line-height:1.5;}
+.wa-btn{
+  display:flex;align-items:center;justify-content:center;gap:9px;background:#25D366;color:#fff;
+  padding:13px 16px;border-radius:8px;font-weight:700;font-size:14px;width:100%;
+}
+.wa-btn:hover{background:#1fbd5a;}
+
+.ai-input-row{
+  border-top:1px solid var(--line);padding:12px 14px;display:flex;gap:10px;align-items:center;background:#fff;flex-shrink:0;
+}
+.ai-input-row input{
+  flex:1;border:1.5px solid var(--gray-200);border-radius:24px;padding:11px 16px;font-size:14px;font-family:var(--font-body);
+}
+.ai-input-row input:focus{outline:none;border-color:var(--navy-700);}
+.ai-send{background:var(--navy-900);color:#fff;border:none;width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ai-send:hover{background:var(--red-600);}
+.ai-foot-note{text-align:center;font-size:10.5px;color:#9AA5B8;padding:6px 14px 12px;font-family:var(--font-mono);background:#fff;}
+
+/* Utility */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="bar">
+    <a href="#home" class="logo">
+      <span class="name">SOARES REMODELING</span>
+      <span class="tag">SOUTH FLORIDA · EST. EXPERIENCE 20 YRS</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn-call" href="tel:+19548294117" data-track="phone_click" data-track-source="header">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>(954) 829-4117</span>
+      </a>
+      <a class="btn btn-red btn-sm" href="#lead-form" data-track="estimate_form_start" data-track-source="header">Get a Free Estimate</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="drawer-top">
+    <span class="logo"><span class="name" style="color:#fff;">SOARES REMODELING</span></span>
+    <button class="close-btn" id="drawerClose" aria-label="Close menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="drawer-actions">
+    <a class="btn btn-red btn-block" href="#lead-form" data-track="estimate_form_start" data-track-source="mobile_drawer">Get a Free Estimate</a>
+    <a class="btn btn-outline-light btn-block" href="tel:+19548294117" data-track="phone_click" data-track-source="mobile_drawer">Call (954) 829-4117</a>
+  </div>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-copy">
+      <div class="eyebrow">South Florida · Licensed &amp; Insured</div>
+      <h1>Transform your home.<br><em>Built to last.</em></h1>
+      <p class="hero-sub">Professional remodeling and construction backed by 20 years of experience serving South Florida homeowners.</p>
+      <div class="trust-inline">
+        <div class="item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>20 Years of Experience</div>
+        <div class="item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Licensed &amp; Insured</div>
+        <div class="item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Serving South Florida</div>
+      </div>
+      <div class="hero-cta">
+        <a href="#lead-form" class="btn btn-red" data-track="estimate_form_start" data-track-source="hero">Get a Free Estimate</a>
+        <a href="tel:+19548294117" class="btn btn-outline-light" data-track="phone_click" data-track-source="hero">Call (954) 829-4117</a>
+      </div>
+      <button class="hero-ai-cta" id="heroAiCta" data-track="ai_chat_open" data-track-source="hero">
+        <span class="dot"></span> Ask our AI Assistant →
+      </button>
+    </div>
+    <div class="hero-visual">
+      <div class="photo-tile blueprint" style="min-height:460px;">
+        <div class="tile-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+        <div class="tile-label"><b>Featured Project Photo</b>Replace with a real Soares Remodeling project — full home renovation, South Florida.</div>
+      </div>
+      <div class="stat-chip">
+        <span class="num">20</span>
+        <span class="label">Years Serving South Florida</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR
+     ============================================================ -->
+<section class="trust-bar">
+  <div class="container">
+    <div class="t-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <span>20 Years Experience</span>
+    </div>
+    <div class="t-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>
+      <span>Licensed &amp; Insured</span>
+    </div>
+    <div class="t-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>South Florida</span>
+    </div>
+    <div class="t-item">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.6 6.2L21 9l-5 4.5L17.4 21 12 17.5 6.6 21 8 13.5 3 9l6.4-.8z"/></svg>
+      <span>Quality Craftsmanship</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">What We Do</div>
+      <h2>Everything you need to transform your home</h2>
+      <p>From a single room refresh to a full property transformation, Soares Remodeling handles every phase of the project.</p>
+    </div>
+
+    <div class="services-grid" id="servicesGrid">
+      <!-- Cards injected by JS from serviceData -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     20 YEARS EXPERIENCE
+     ============================================================ -->
+<section class="experience" id="about">
+  <div class="container">
+    <div class="experience-num">
+      <div class="years-num">20</div>
+      <div class="years-sub">Years Serving South Florida</div>
+    </div>
+    <div class="experience-copy">
+      <p>For two decades, Soares Remodeling has helped homeowners throughout South Florida renovate, improve and transform their properties.</p>
+      <p>Our approach combines experience, attention to detail and a commitment to delivering work our clients can feel confident about — from the first conversation to the final walkthrough.</p>
+      <a href="#lead-form" class="btn btn-outline-light" data-track="estimate_form_start" data-track-source="experience">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECT PORTFOLIO
+     ============================================================ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Portfolio</div>
+      <h2>See the transformation</h2>
+      <p>A selection of project types we work on. Photos below are placeholders — ready to be replaced with real Soares Remodeling project photography.</p>
+    </div>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+      <button class="filter-btn" data-filter="bathroom">Bathrooms</button>
+      <button class="filter-btn" data-filter="flooring">Flooring</button>
+      <button class="filter-btn" data-filter="remodel">Remodeling</button>
+      <button class="filter-btn" data-filter="painting">Painting</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-card">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="photo-tile" id="lbPhoto"><div class="tile-label" id="lbPhotoLabel"></div></div>
+    <div class="lightbox-body">
+      <h3 id="lbTitle"></h3>
+      <div class="lb-meta" id="lbMeta"></div>
+      <p id="lbDesc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     BEFORE / AFTER
+     ============================================================ -->
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Real Transformations</div>
+      <h2>Before &amp; after</h2>
+      <p>Drag the slider to compare. Replace these placeholder panels with real before/after project photography.</p>
+    </div>
+    <div class="ba-wrap" id="baWrap"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+     ============================================================ -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Why Soares Remodeling</div>
+      <h2>Experience you can build on</h2>
+      <p>Homeowners choose Soares Remodeling for a process that feels clear, honest and easy from day one.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <h3>20 Years of Experience</h3>
+        <p>Two decades of hands-on remodeling and construction work across South Florida.</p>
+      </div>
+      <div class="why-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3z"/></svg>
+        <h3>Licensed &amp; Insured</h3>
+        <p>Peace of mind knowing your project is backed by a licensed, insured professional.</p>
+      </div>
+      <div class="why-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.6 6.2L21 9l-5 4.5L17.4 21 12 17.5 6.6 21 8 13.5 3 9l6.4-.8z"/></svg>
+        <h3>Quality Workmanship</h3>
+        <p>Every project is treated with the same care and craftsmanship, regardless of size.</p>
+      </div>
+      <div class="why-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <h3>Attention to Detail</h3>
+        <p>The small decisions — trim, transitions, finishes — are where a project is won or lost.</p>
+      </div>
+      <div class="why-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3>Professional Communication</h3>
+        <p>Clear updates and honest answers throughout your project, start to finish.</p>
+      </div>
+      <div class="why-card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h3>Local South Florida Service</h3>
+        <p>Deep familiarity with South Florida homes, conditions and building requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OUR PROCESS
+     ============================================================ -->
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>From idea to finished project</h2>
+      <p>A straightforward five-step path from your first message to enjoying your new space.</p>
+    </div>
+    <div class="process-track">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h3>Tell Us About Your Project</h3>
+        <p>Reach out by phone, form or our AI assistant and share what you're planning.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h3>Schedule Your Estimate</h3>
+        <p>We set up a time to review your property and understand the full scope.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h3>Review the Scope</h3>
+        <p>We walk through the details together so expectations are clear from the start.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h3>We Build &amp; Transform</h3>
+        <p>Our team gets to work with the attention to detail your home deserves.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">05</div>
+        <h3>Enjoy Your New Space</h3>
+        <p>A final walkthrough, and your home is ready to live in — transformed.</p>
+      </div>
+    </div>
+    <div class="process-cta">
+      <a href="#lead-form" class="btn btn-navy" data-track="estimate_form_start" data-track-source="process">Start Your Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOCIAL PROOF
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Social Proof</div>
+      <h2>Built on trust. Proven through our work.</h2>
+      <p>Verified customer reviews will appear here as they come in.</p>
+    </div>
+
+    <div class="google-badge">
+      <div class="g-score">—</div>
+      <div class="g-meta"><b>Google Rating — Pending</b>Connect Google Business Profile to display live rating &amp; review count.</div>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-card placeholder">
+        <span class="ph-badge">Awaiting Review</span>
+        <p style="font-style:normal;color:var(--ink-soft);margin-top:10px;">This space is reserved for a real, verified customer review. No testimonials have been fabricated.</p>
+      </div>
+      <div class="testi-card placeholder">
+        <span class="ph-badge">Awaiting Review</span>
+        <p style="font-style:normal;color:var(--ink-soft);margin-top:10px;">Structured to support Google review sync: rating, name, project type, date and review text.</p>
+      </div>
+      <div class="testi-card placeholder">
+        <span class="ph-badge">Awaiting Review</span>
+        <p style="font-style:normal;color:var(--ink-soft);margin-top:10px;">Reach out to request a review from a recent client to feature here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE AREA
+     ============================================================ -->
+<section class="section section--paper">
+  <div class="container">
+    <div class="area-wrap">
+      <div class="area-copy">
+        <div class="eyebrow">Where We Work</div>
+        <h2 style="font-size:clamp(26px,3.6vw,38px);color:var(--navy-900);margin-bottom:18px;">Proudly serving South Florida</h2>
+        <p>Serving homeowners throughout South Florida. Cities below are placeholders — confirm exact service cities to finalize local coverage and SEO targeting.</p>
+        <div class="area-tags" id="areaTags"><!-- injected editable placeholder cities --></div>
+      </div>
+      <div class="area-visual blueprint blueprint--dark">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="400" fill="#0B1F3A"/>
+          <g stroke="rgba(255,255,255,.12)" stroke-width="1">
+            <line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="160" x2="400" y2="160"/>
+            <line x1="0" y1="240" x2="400" y2="240"/><line x1="0" y1="320" x2="400" y2="320"/>
+            <line x1="80" y1="0" x2="80" y2="400"/><line x1="160" y1="0" x2="160" y2="400"/>
+            <line x1="240" y1="0" x2="240" y2="400"/><line x1="320" y1="0" x2="320" y2="400"/>
+          </g>
+          <circle cx="200" cy="200" r="7" fill="#C8102E"/>
+          <circle cx="200" cy="200" r="26" fill="none" stroke="#C8102E" stroke-width="1.5" opacity=".55"/>
+          <circle cx="200" cy="200" r="50" fill="none" stroke="#C8102E" stroke-width="1" opacity=".3"/>
+          <text x="200" y="250" text-anchor="middle" fill="#C4CDDD" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2">SOUTH FLORIDA SERVICE AREA</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AI ASSISTANT INTRO SECTION
+     ============================================================ -->
+<section class="section section--dark" id="ai-assistant">
+  <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;">
+    <div>
+      <div class="eyebrow">Get Answers Right Now</div>
+      <h2>Meet the Soares AI Project Assistant</h2>
+      <p style="margin-top:16px;color:#C4CDDD;font-size:16px;line-height:1.7;">Tell it what you're planning — kitchen, bathroom, flooring, painting or a full remodel — and it will help you think through the project and request a free estimate. When you're ready to talk, it connects you directly with Alessandro on WhatsApp.</p>
+      <button class="btn btn-red" id="aiSectionCta" style="margin-top:26px;" data-track="ai_chat_open" data-track-source="ai_section">Chat With the Assistant</button>
+    </div>
+    <div class="photo-tile blueprint" style="min-height:320px;">
+      <div class="tile-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+      <div class="tile-label"><b>Always On</b>Instant answers about your remodeling project, any time of day.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CONVERSION CTA
+     ============================================================ -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Ready to transform your home?</h2>
+    <p>Tell us about your project and request your free estimate today.</p>
+    <div class="final-actions">
+      <a href="#lead-form" class="btn btn-red" data-track="estimate_form_start" data-track-source="final_cta">Get My Free Estimate</a>
+      <button class="btn btn-outline-light" id="finalCtaChat" data-track="ai_chat_open" data-track-source="final_cta">Chat About My Project</button>
+      <a href="tel:+19548294117" class="btn btn-outline-light" data-track="phone_click" data-track-source="final_cta">Call (954) 829-4117</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LEAD FORM
+     ============================================================ -->
+<section class="section" id="lead-form">
+  <div class="container">
+    <div class="form-wrap" id="contact">
+      <div>
+        <div class="eyebrow">Free Estimate</div>
+        <h2 style="font-size:clamp(26px,3.6vw,36px);color:var(--navy-900);">Request your free estimate</h2>
+        <p style="margin-top:16px;color:var(--ink-soft);font-size:16px;line-height:1.7;">Share a few details about your project and our team will follow up to schedule your estimate. Prefer to talk it through first? Use the AI assistant or call us directly.</p>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:14px;">
+          <a href="tel:+19548294117" class="btn btn-outline" data-track="phone_click" data-track-source="lead_form_side">Call (954) 829-4117</a>
+          <button class="btn btn-outline" id="leadFormAiBtn" data-track="ai_chat_open" data-track-source="lead_form_side">Chat With the AI Assistant</button>
+        </div>
+      </div>
+
+      <form class="lead-form" id="leadForm" novalidate>
+        <div class="form-status" id="formStatus"></div>
+
+        <div class="field" id="f-name">
+          <label for="inName">Name</label>
+          <input type="text" id="inName" name="name" autocomplete="name" placeholder="Your full name">
+          <div class="err-msg">Please enter your name.</div>
+        </div>
+        <div class="field" id="f-phone">
+          <label for="inPhone">Phone</label>
+          <input type="tel" id="inPhone" name="phone" autocomplete="tel" placeholder="(954) 000-0000">
+          <div class="err-msg">Please enter a valid phone number.</div>
+        </div>
+        <div class="field" id="f-email">
+          <label for="inEmail">Email</label>
+          <input type="email" id="inEmail" name="email" autocomplete="email" placeholder="you@email.com">
+          <div class="err-msg">Please enter a valid email address.</div>
+        </div>
+        <div class="field" id="f-service">
+          <label for="inService">Project Type</label>
+          <select id="inService" name="projectType">
+            <option value="">Select a project type</option>
+            <option>Kitchen Remodeling</option>
+            <option>Bathroom Remodeling</option>
+            <option>Flooring</option>
+            <option>Painting</option>
+            <option>Complete Home Remodeling</option>
+            <option>New Construction</option>
+            <option>Something Else</option>
+          </select>
+          <div class="err-msg">Please select a project type.</div>
+        </div>
+        <div class="field" id="f-zip">
+          <label for="inZip">ZIP Code</label>
+          <input type="text" id="inZip" name="zip" inputmode="numeric" placeholder="e.g. 33432">
+          <div class="err-msg">Please enter your ZIP code.</div>
+        </div>
+        <div class="field" id="f-desc">
+          <label for="inDesc">Project Description</label>
+          <textarea id="inDesc" name="description" placeholder="Tell us a bit about what you'd like to change..."></textarea>
+        </div>
+
+        <!-- honeypot spam-protection field -->
+        <div style="position:absolute;left:-9999px;opacity:0;" aria-hidden="true">
+          <label for="inCompany">Company</label>
+          <input type="text" id="inCompany" name="company" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="btn btn-red btn-block" id="leadSubmitBtn" data-track="estimate_form_submit">
+          <span id="leadSubmitLabel">Request My Free Estimate</span>
+        </button>
+        <p class="form-note">By submitting, you agree to be contacted by Soares Remodeling about your project. We do not share your information.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">SOARES REMODELING</div>
+        <p>20 Years Serving South Florida.<br>Licensed &amp; Insured.</p>
+        <p style="margin-top:16px;">
+          <a href="https://www.instagram.com/Soaresremodeling" target="_blank" rel="noopener" data-track="instagram_click" style="display:inline-flex;align-items:center;gap:8px;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+            @Soaresremodeling
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#lead-form">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+19548294117" data-track="phone_click" data-track-source="footer">(954) 829-4117</a>
+        <a href="mailto:soares1975@icloud.com">soares1975@icloud.com</a>
+        <a href="https://wa.me/19548294117" target="_blank" rel="noopener" data-track="whatsapp_click" data-track-source="footer">WhatsApp</a>
+        <a href="#" data-legal="privacy">Privacy Policy</a>
+        <a href="#" data-legal="terms">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yearNow"></span> Soares Remodeling. All rights reserved.</span>
+      <span>Site built &amp; maintained with an integrated AI project assistant.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MOBILE STICKY BAR
+     ============================================================ -->
+<div class="mobile-bar" id="mobileBar">
+  <div class="mb-row">
+    <a href="tel:+19548294117" data-track="phone_click" data-track-source="mobile_bar">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+    <button id="mobileBarAi" data-track="ai_chat_open" data-track-source="mobile_bar">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      AI Assistant
+    </button>
+    <a href="#lead-form" class="mb-primary" data-track="estimate_form_start" data-track-source="mobile_bar">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+      Estimate
+    </a>
+  </div>
+</div>
+
+<!-- ============================================================
+     AI CHAT WIDGET — LAUNCHER, PROACTIVE BUBBLE, PANEL
+     ============================================================ -->
+<div class="proactive-bubble" id="proactiveBubble">
+  <button class="pb-close" id="proactiveClose" aria-label="Dismiss">×</button>
+  <p>Planning a renovation? I can help you get started.</p>
+</div>
+
+<button class="ai-launcher" id="aiLauncher" data-track="ai_chat_open" data-track-source="launcher" aria-label="Ask about your project">
+  <span class="ai-ico">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </span>
+  <span class="ai-text"><b>Ask About Your Project</b><span>Soares AI Assistant</span></span>
+  <span class="pulse"></span>
+</button>
+
+<div class="ai-panel" id="aiPanel" role="dialog" aria-label="Soares AI Project Assistant">
+  <div class="ai-head">
+    <span class="ai-ico">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </span>
+    <div class="ai-meta">
+      <b>Soares AI Project Assistant</b>
+      <span class="status"><span class="d"></span> Online now</span>
+    </div>
+    <button class="ai-close" id="aiClose" aria-label="Close chat">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="ai-body" id="aiBody"></div>
+  <div class="ai-input-row">
+    <input type="text" id="aiInput" placeholder="Type your message..." autocomplete="off">
+    <button class="ai-send" id="aiSend" aria-label="Send">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+  <div class="ai-foot-note">Answers are based on verified Soares Remodeling information.</div>
+</div>
+
+<script>
+/* ==================================================================
+   ANALYTICS / EVENT TRACKING
+   Prepared for GA4, GTM, Meta Pixel, Google Ads. Push to dataLayer
+   and forward to gtag/fbq if present. No PII is sent in event params
+   beyond what the business explicitly wants tracked.
+   ================================================================== */
+window.dataLayer = window.dataLayer || [];
+function trackEvent(eventName, params){
+  params = params || {};
+  window.dataLayer.push(Object.assign({event:eventName}, params));
+  if (typeof window.gtag === 'function') window.gtag('event', eventName, params);
+  if (typeof window.fbq === 'function') window.fbq('trackCustom', eventName, params);
+  // console.debug('[track]', eventName, params);
+}
+document.addEventListener('click', function(e){
+  const el = e.target.closest('[data-track]');
+  if(!el) return;
+  trackEvent(el.getAttribute('data-track'), { source: el.getAttribute('data-track-source') || '' });
+});
+
+/* ==================================================================
+   HEADER SCROLL STATE
+   ================================================================== */
+const siteHeader = document.getElementById('siteHeader');
+window.addEventListener('scroll', function(){
+  siteHeader.classList.toggle('is-solid', window.scrollY > 40);
+}, {passive:true});
+
+/* Mobile drawer */
+const navToggle = document.getElementById('navToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const drawerClose = document.getElementById('drawerClose');
+navToggle.addEventListener('click', ()=> mobileDrawer.classList.add('open'));
+drawerClose.addEventListener('click', ()=> mobileDrawer.classList.remove('open'));
+mobileDrawer.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mobileDrawer.classList.remove('open')));
+
+document.getElementById('yearNow').textContent = new Date().getFullYear();
+
+/* ==================================================================
+   SERVICES DATA + RENDER
+   ================================================================== */
+const serviceData = [
+  {id:'kitchen', name:'Kitchen Remodeling', desc:'Modern kitchens designed around beauty, functionality and everyday living.'},
+  {id:'bathroom', name:'Bathroom Remodeling', desc:'Transform outdated bathrooms into comfortable, elegant spaces.'},
+  {id:'flooring', name:'Flooring', desc:'Professional flooring installation that changes the look and feel of your home.'},
+  {id:'painting', name:'Painting', desc:'Interior and exterior painting with professional preparation and attention to detail.'},
+  {id:'remodel', name:'Complete Remodeling', desc:'From individual rooms to complete property transformations.'},
+  {id:'construction', name:'New Construction', desc:'Professional construction solutions built around your project.'}
+];
+
+const servicesGrid = document.getElementById('servicesGrid');
+serviceData.forEach(s=>{
+  const card = document.createElement('div');
+  card.className = 'service-card';
+  card.innerHTML = `
+    <div class="photo-tile light">
+      <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+      <div class="tile-label"><b>${s.name}</b>Project photo placeholder</div>
+    </div>
+    <div class="sc-body">
+      <h3>${s.name}</h3>
+      <p>${s.desc}</p>
+      <div class="sc-actions">
+        <a href="#projects" class="btn btn-outline btn-sm" data-track="service_click" data-track-source="${s.id}">Learn More</a>
+        <a href="#lead-form" class="btn btn-red btn-sm" data-track="estimate_form_start" data-track-source="${s.id}">Get Estimate</a>
+        <button class="btn sc-ask-ai btn-sm" data-service="${s.name}" data-track="ai_service_selected" data-track-source="${s.id}">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Ask AI About This
+        </button>
+      </div>
+    </div>`;
+  servicesGrid.appendChild(card);
+});
+servicesGrid.addEventListener('click', function(e){
+  const btn = e.target.closest('.sc-ask-ai');
+  if(!btn) return;
+  openAiPanel();
+  aiUserMessage(`I'm interested in ${btn.dataset.service}.`);
+  ai.state.projectType = btn.dataset.service;
+  window.setTimeout(()=> aiHandleServiceIntent(btn.dataset.service), 450);
+});
+
+/* ==================================================================
+   PORTFOLIO DATA + RENDER  (structure ready for real project photos)
+   ================================================================== */
+const portfolioData = [
+  {id:1, cat:'kitchen', title:'Kitchen Remodel', city:'City — TBD', desc:'Full kitchen renovation. Replace with real project description, services performed and photo gallery.'},
+  {id:2, cat:'bathroom', title:'Bathroom Remodel', city:'City — TBD', desc:'Bathroom transformation. Replace with real project description, services performed and photo gallery.'},
+  {id:3, cat:'flooring', title:'Flooring Installation', city:'City — TBD', desc:'New flooring installation. Replace with real project description, services performed and photo gallery.'},
+  {id:4, cat:'remodel', title:'Complete Home Remodel', city:'City — TBD', desc:'Whole-property renovation. Replace with real project description, services performed and photo gallery.'},
+  {id:5, cat:'painting', title:'Interior Painting', city:'City — TBD', desc:'Interior painting project. Replace with real project description, services performed and photo gallery.'},
+  {id:6, cat:'kitchen', title:'Kitchen Remodel', city:'City — TBD', desc:'Cabinet and countertop replacement. Replace with real project description and photo gallery.'}
+];
+const portfolioGrid = document.getElementById('portfolioGrid');
+function renderPortfolio(filter){
+  portfolioGrid.innerHTML = '';
+  portfolioData.filter(p=> filter==='all' || p.cat===filter).forEach(p=>{
+    const el = document.createElement('div');
+    el.className = 'p-item';
+    el.innerHTML = `
+      <div class="photo-tile">
+        <div class="tile-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+      </div>
+      <div class="p-overlay"><div class="ptxt"><b>${p.title}</b><span>${p.city}</span></div></div>`;
+    el.addEventListener('click', ()=> openLightbox(p));
+    portfolioGrid.appendChild(el);
+    trackEvent('project_view', {project:p.title});
+  });
+}
+renderPortfolio('all');
+document.getElementById('filterRow').addEventListener('click', function(e){
+  const btn = e.target.closest('.filter-btn');
+  if(!btn) return;
+  this.querySelectorAll('.filter-btn').forEach(b=> b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPortfolio(btn.dataset.filter);
+});
+
+const lightbox = document.getElementById('lightbox');
+function openLightbox(p){
+  document.getElementById('lbTitle').textContent = p.title;
+  document.getElementById('lbMeta').textContent = `${p.city} · Services performed: TBD`;
+  document.getElementById('lbDesc').textContent = p.desc;
+  document.getElementById('lbPhotoLabel').innerHTML = `<b>${p.title}</b>Add before/after gallery photos`;
+  lightbox.classList.add('open');
+}
+document.getElementById('lightboxClose').addEventListener('click', ()=> lightbox.classList.remove('open'));
+lightbox.addEventListener('click', e=>{ if(e.target === lightbox) lightbox.classList.remove('open'); });
+
+/* ==================================================================
+   BEFORE / AFTER SLIDERS
+   ================================================================== */
+const baPairs = [
+  {label:'Kitchen Remodel', city:'City — TBD'},
+  {label:'Bathroom Remodel', city:'City — TBD'}
+];
+const baWrap = document.getElementById('baWrap');
+baPairs.forEach((pair, i)=>{
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `
+    <div class="ba-slider" data-idx="${i}">
+      <div class="ba-layer ba-after"><div class="photo-tile light" style="height:100%;min-height:0;"><div class="tile-label"><b>AFTER</b>Add real "after" photo</div></div></div>
+      <div class="ba-layer ba-before"><div class="photo-tile" style="height:100%;min-height:0;"><div class="tile-label"><b>BEFORE</b>Add real "before" photo</div></div></div>
+      <span class="ba-tag before-tag">BEFORE</span>
+      <span class="ba-tag after-tag">AFTER</span>
+      <div class="ba-handle" style="left:50%;">
+        <div class="grip"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="8 7 3 12 8 17"/><polyline points="16 7 21 12 16 17"/></svg></div>
+      </div>
+    </div>
+    <div class="ba-caption"><b>${pair.label}</b> — ${pair.city}</div>`;
+  baWrap.appendChild(wrap);
+});
+document.querySelectorAll('.ba-slider').forEach(slider=>{
+  const before = slider.querySelector('.ba-before');
+  const handle = slider.querySelector('.ba-handle');
+  let dragging = false;
+  function setPct(pct){
+    pct = Math.max(0, Math.min(100, pct));
+    before.style.clipPath = `inset(0 ${100-pct}% 0 0)`;
+    handle.style.left = pct + '%';
+  }
+  function pctFromEvent(clientX){
+    const rect = slider.getBoundingClientRect();
+    return ((clientX - rect.left) / rect.width) * 100;
+  }
+  handle.addEventListener('pointerdown', e=>{ dragging = true; handle.setPointerCapture(e.pointerId); });
+  window.addEventListener('pointerup', ()=> dragging=false);
+  slider.addEventListener('pointermove', e=>{ if(dragging) setPct(pctFromEvent(e.clientX)); });
+  slider.addEventListener('click', e=>{ setPct(pctFromEvent(e.clientX)); });
+});
+
+/* ==================================================================
+   SERVICE AREA — editable placeholder city list (Local SEO ready)
+   ================================================================== */
+const areaCities = ['City 1 — TBD','City 2 — TBD','City 3 — TBD','City 4 — TBD','City 5 — TBD','City 6 — TBD'];
+const areaTagsEl = document.getElementById('areaTags');
+areaCities.forEach(c=>{
+  const tag = document.createElement('span');
+  tag.className = 'area-tag';
+  tag.textContent = c;
+  areaTagsEl.appendChild(tag);
+});
+
+/* ==================================================================
+   LEAD FORM — validation, states, structured lead object
+   ================================================================== */
+const leadForm = document.getElementById('leadForm');
+const formStatus = document.getElementById('formStatus');
+const leadSubmitBtn = document.getElementById('leadSubmitBtn');
+const leadSubmitLabel = document.getElementById('leadSubmitLabel');
+
+function validateField(id, condition){
+  const field = document.getElementById(id);
+  field.classList.toggle('error', !condition);
+  return condition;
+}
+function isValidEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+function isValidPhone(v){ return v.replace(/\D/g,'').length >= 10; }
+
+leadForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  formStatus.className = 'form-status';
+  formStatus.textContent = '';
+
+  // honeypot spam check
+  if (document.getElementById('inCompany').value.trim() !== '') {
+    return; // silently drop likely-bot submissions
+  }
+
+  const name = document.getElementById('inName').value.trim();
+  const phone = document.getElementById('inPhone').value.trim();
+  const email = document.getElementById('inEmail').value.trim();
+  const service = document.getElementById('inService').value;
+  const zip = document.getElementById('inZip').value.trim();
+  const desc = document.getElementById('inDesc').value.trim();
+
+  const okName = validateField('f-name', name.length > 1);
+  const okPhone = validateField('f-phone', isValidPhone(phone));
+  const okEmail = validateField('f-email', isValidEmail(email));
+  const okService = validateField('f-service', service !== '');
+  const okZip = validateField('f-zip', zip.length >= 4);
+
+  if(!(okName && okPhone && okEmail && okService && okZip)){
+    formStatus.className = 'form-status error';
+    formStatus.textContent = 'Please fix the highlighted fields and try again.';
+    return;
+  }
+
+  // Structured lead object — ready for CRM / GoHighLevel / webhook / email / Sheets / API integration.
+  const lead = {
+    name, phone, email,
+    projectType: service,
+    projectDescription: desc,
+    propertyType: '',
+    city: '',
+    zipCode: zip,
+    timeline: '',
+    budgetRange: '',
+    leadSource: 'Website Lead Form',
+    conversationSummary: '',
+    leadScore: 'WARM',
+    createdAt: new Date().toISOString()
+  };
+
+  leadSubmitLabel.textContent = 'Sending...';
+  leadSubmitBtn.disabled = true;
+
+  // TODO (backend): POST `lead` to a secure serverless endpoint that forwards
+  // to your CRM / GoHighLevel / webhook / email notification / Google Sheets.
+  // Example: fetch('/api/leads', { method:'POST', body: JSON.stringify(lead) })
+  window.setTimeout(function(){
+    leadSubmitBtn.disabled = false;
+    leadSubmitLabel.textContent = 'Request My Free Estimate';
+    formStatus.className = 'form-status success';
+    formStatus.textContent = "Thanks, " + name.split(' ')[0] + "! We've received your request and will be in touch shortly.";
+    trackEvent('estimate_form_submit', {projectType: service});
+    leadForm.reset();
+  }, 900);
+});
+
+/* ==================================================================
+   AI CHAT ASSISTANT — rule-based conversational qualification flow.
+   Architected so this front-end logic can be swapped for calls to a
+   secure backend endpoint -> LLM provider -> knowledge base, without
+   changing the UI. See callAssistantBackend() below for the hook.
+   No API keys are ever referenced in this front-end code.
+   ================================================================== */
+const aiPanel = document.getElementById('aiPanel');
+const aiBody = document.getElementById('aiBody');
+const aiInput = document.getElementById('aiInput');
+const aiSend = document.getElementById('aiSend');
+const proactiveBubble = document.getElementById('proactiveBubble');
+
+const WHATSAPP_NUMBER = '19548294117';
+
+// Verified company knowledge base — the assistant must only answer from this.
+const knowledgeBase = {
+  company: 'Soares Remodeling',
+  owner: 'Alessandro Soares',
+  phone: '(954) 829-4117',
+  email: 'soares1975@icloud.com',
+  instagram: '@Soaresremodeling',
+  experience: '20 years serving South Florida',
+  status: 'Licensed & Insured',
+  services: ['Kitchen Remodeling','Bathroom Remodeling','Flooring','Interior & Exterior Painting','Complete Home Remodeling','New Construction'],
+  serviceArea: 'South Florida',
+  unknownTopics: ['pricing','license number','financing','warranty','availability','discounts','completion dates']
+};
+
+const ai = {
+  state: {
+    step: 'welcome',
+    projectType: '', description: '', zip: '', propertyType: '',
+    timeline: '', budget: '', name: '', phone: '', email: '',
+    leadScore: 'COLD'
+  },
+  history: [] // {role:'user'|'assistant', text:''} — for conversationSummary / backend context
+};
+
+function aiScrollToBottom(){ aiBody.scrollTop = aiBody.scrollHeight; }
+
+function aiBotMessage(html, opts){
+  opts = opts || {};
+  const typing = document.createElement('div');
+  typing.className = 'msg-typing';
+  typing.innerHTML = '<span></span><span></span><span></span>';
+  aiBody.appendChild(typing);
+  aiScrollToBottom();
+  return new Promise(resolve=>{
+    window.setTimeout(()=>{
+      typing.remove();
+      const msg = document.createElement('div');
+      msg.className = 'msg bot';
+      msg.innerHTML = html;
+      aiBody.appendChild(msg);
+      ai.history.push({role:'assistant', text: aiBody.lastChild.textContent});
+      aiScrollToBottom();
+      resolve();
+    }, opts.delay || 550);
+  });
+}
+function aiUserMessage(text){
+  const msg = document.createElement('div');
+  msg.className = 'msg user';
+  msg.textContent = text;
+  aiBody.appendChild(msg);
+  ai.history.push({role:'user', text});
+  aiScrollToBottom();
+}
+function aiQuickReplies(options, handler, redLast){
+  const wrap = document.createElement('div');
+  wrap.className = 'quick-replies';
+  options.forEach((opt, i)=>{
+    const btn = document.createElement('button');
+    btn.className = 'qr-btn' + ((redLast && i===options.length-1) ? ' qr-red' : '');
+    btn.textContent = opt;
+    btn.addEventListener('click', ()=>{
+      wrap.remove();
+      aiUserMessage(opt);
+      handler(opt);
+    });
+    wrap.appendChild(btn);
+  });
+  aiBody.appendChild(wrap);
+  aiScrollToBottom();
+}
+
+function openAiPanel(){
+  aiPanel.classList.add('open');
+  proactiveBubble.classList.remove('show');
+  trackEvent('ai_chat_open', {});
+  if(ai.state.step === 'welcome' && aiBody.children.length === 0){
+    startAiConversation();
+    trackEvent('ai_chat_started', {});
+  }
+  window.setTimeout(()=> aiInput.focus(), 200);
+}
+function closeAiPanel(){ aiPanel.classList.remove('open'); }
+
+document.getElementById('aiLauncher').addEventListener('click', openAiPanel);
+document.getElementById('aiClose').addEventListener('click', closeAiPanel);
+document.getElementById('heroAiCta').addEventListener('click', openAiPanel);
+document.getElementById('aiSectionCta').addEventListener('click', openAiPanel);
+document.getElementById('finalCtaChat').addEventListener('click', openAiPanel);
+document.getElementById('leadFormAiBtn').addEventListener('click', openAiPanel);
+document.getElementById('mobileBarAi').addEventListener('click', openAiPanel);
+
+/* Proactive bubble — shows once after meaningful engagement, dismissible, never reopens */
+let proactiveShown = sessionStorage.getItem('soares_proactive_shown') === '1';
+let engagementScore = 0;
+function maybeShowProactive(){
+  if (proactiveShown || aiPanel.classList.contains('open')) return;
+  proactiveBubble.classList.add('show');
+  proactiveShown = true;
+  sessionStorage.setItem('soares_proactive_shown','1');
+}
+window.addEventListener('scroll', function(){
+  engagementScore = Math.max(engagementScore, window.scrollY);
+  if (engagementScore > window.innerHeight * 1.6) maybeShowProactive();
+}, {passive:true});
+document.getElementById('proactiveClose').addEventListener('click', ()=> proactiveBubble.classList.remove('show'));
+proactiveBubble.addEventListener('click', function(e){
+  if(e.target.closest('.pb-close')) return;
+  openAiPanel();
+});
+
+/* ---------- Conversation flow ---------- */
+async function startAiConversation(){
+  await aiBotMessage("Hi! 👋 I'm the Soares Remodeling Project Assistant.<br><br>I can help you explore your remodeling project, answer initial questions, and help you request a free estimate.<br><br>What are you thinking about renovating?", {delay:400});
+  aiQuickReplies(['Kitchen','Bathroom','Flooring','Painting','Complete Remodel','New Construction','Something Else'], handleProjectType);
+}
+
+function handleProjectType(choice){
+  ai.state.projectType = choice;
+  aiHandleServiceIntent(choice);
+}
+
+async function aiHandleServiceIntent(choice){
+  ai.state.projectType = choice;
+  await aiBotMessage(`Great choice. ${choice} is definitely something we handle regularly here in South Florida. What would you like to change or improve?`);
+  askForDescription();
+}
+function askForDescription(){
+  const wrap = document.createElement('div');
+  wrap.className = 'msg bot';
+  wrap.style.display='none';
+  aiBody.appendChild(wrap);
+  ai.state.step = 'description';
+}
+
+async function askZip(){
+  ai.state.step = 'zip';
+  await aiBotMessage("Great. What ZIP code is the property in?");
+}
+async function askPropertyType(){
+  ai.state.step = 'propertyType';
+  await aiBotMessage("Got it — and is this property a:");
+  aiQuickReplies(['House','Condo','Townhouse','Commercial Property','Other'], choice=>{
+    ai.state.propertyType = choice;
+    askTimeline();
+  });
+}
+async function askTimeline(){
+  ai.state.step = 'timeline';
+  await aiBotMessage("Perfect. What's your timeline looking like?");
+  aiQuickReplies(['ASAP','Within 30 Days','1-3 Months','3+ Months','Just Researching'], choice=>{
+    ai.state.timeline = choice;
+    scoreLead();
+    askName();
+  });
+}
+async function askName(){
+  ai.state.step = 'name';
+  await aiBotMessage("Awesome — I have a good picture of your project. So I can pass this along, what's your name?");
+}
+async function askPhoneNum(){
+  ai.state.step = 'phone';
+  await aiBotMessage(`Nice to meet you, ${ai.state.name.split(' ')[0]}! What's the best phone number to reach you?`);
+}
+async function askEmail(){
+  ai.state.step = 'email';
+  await aiBotMessage("And an email address, in case Alessandro's team needs to send over anything in writing?");
+}
+
+function scoreLead(){
+  const soon = ['ASAP','Within 30 Days'].includes(ai.state.timeline);
+  if (ai.state.projectType && ai.state.zip && soon) ai.state.leadScore = 'HOT';
+  else if (ai.state.projectType) ai.state.leadScore = 'WARM';
+  else ai.state.leadScore = 'COLD';
+}
+
+async function finishQualification(){
+  ai.state.step = 'summary';
+  scoreLead();
+  await aiBotMessage(`Thanks, ${ai.state.name.split(' ')[0] || 'there'} — that gives our team everything needed for a solid free estimate conversation.`);
+  await presentWhatsAppHandoff();
+}
+
+/* ---------- Human handoff / intent detection ---------- */
+const handoffPatterns = [
+  /talk to (someone|alessandro|a person|a human)/i,
+  /call me/i,
+  /(want|need).{0,15}estimate/i,
+  /when can you (come|start)/i,
+  /how much (will|does|would).{0,20}cost/i,
+  /i want to start/i,
+  /speak (with|to)/i,
+  /schedule/i,
+  /pricing|price|cost/i
+];
+function detectHandoffIntent(text){
+  return handoffPatterns.some(p=> p.test(text));
+}
+const unknownPatterns = [
+  /license number/i, /financing/i, /warrant(y|ies)/i, /discount/i, /guarantee/i, /how much.{0,10}(exactly|precisely)/i
+];
+function detectUnverifiedTopic(text){
+  return unknownPatterns.some(p=> p.test(text));
+}
+
+async function presentWhatsAppHandoff(){
+  await aiBotMessage("Absolutely. I can connect you directly with Alessandro on WhatsApp so you can continue the conversation with him.");
+  const summary = buildLeadSummary();
+  const card = document.createElement('div');
+  card.className = 'wa-handoff-card';
+  card.innerHTML = `<p>Your project details will be sent along so Alessandro doesn't have to ask everything again.</p>
+    <a class="wa-btn" target="_blank" rel="noopener" href="${buildWhatsAppUrl(summary)}" data-track="ai_whatsapp_handoff">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.4 9 10 8 9.8 7.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.3 0 1.4 1 2.7 1.1 2.9.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.5 21.5 10.2 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.4-8.4 8.4z"/></svg>
+      Continue on WhatsApp
+    </a>`;
+  aiBody.appendChild(card);
+  aiScrollToBottom();
+  trackEvent('ai_human_handoff', {leadScore: ai.state.leadScore});
+  if (ai.state.leadScore === 'HOT') trackEvent('ai_hot_lead', {});
+  trackEvent('ai_lead_qualified', {leadScore: ai.state.leadScore});
+}
+
+function buildLeadSummary(){
+  const s = ai.state;
+  const lines = [];
+  lines.push(`Hi Alessandro, I was speaking with the Soares Remodeling AI Assistant.`);
+  if (s.projectType) lines.push(`\nI'm interested in a ${s.projectType} project.`);
+  const details = [];
+  if (s.name) details.push(`Name: ${s.name}`);
+  if (s.zip) details.push(`ZIP: ${s.zip}`);
+  if (s.propertyType) details.push(`Property: ${s.propertyType}`);
+  if (s.timeline) details.push(`Timeline: ${s.timeline}`);
+  if (details.length) lines.push('\n' + details.join('\n'));
+  if (s.description) lines.push(`\nProject:\n${s.description}`);
+  lines.push(`\nI'd like to talk about getting an estimate.`);
+  return lines.join('\n');
+}
+function buildWhatsAppUrl(text){
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+}
+
+/* Internal structured lead object (mirrors lead form schema).
+   Not exposed to the visitor — for CRM / webhook integration. */
+function buildLeadObject(){
+  const s = ai.state;
+  return {
+    name: s.name, phone: s.phone, email: s.email,
+    projectType: s.projectType, projectDescription: s.description,
+    propertyType: s.propertyType, city: '', zipCode: s.zip,
+    timeline: s.timeline, budgetRange: s.budget,
+    leadSource: 'Website AI Chat',
+    conversationSummary: buildLeadSummary(),
+    leadScore: s.leadScore,
+    createdAt: new Date().toISOString()
+  };
+  // TODO (backend): POST this object to the same secure serverless endpoint
+  // used by the lead form, for CRM / GoHighLevel / webhook / email / Sheets sync.
+}
+
+/* ---------- Free-text input handling / step router ---------- */
+async function handleFreeText(text){
+  aiUserMessage(text);
+  aiInput.value = '';
+
+  // Immediate handoff intent — never block on missing qualification data.
+  if (detectHandoffIntent(text) && ai.state.step !== 'phone' && ai.state.step !== 'email' && ai.state.step !== 'name'){
+    if (detectUnverifiedTopic(text)){
+      await aiBotMessage("That's something Alessandro or the team would be better able to confirm after learning more about your project.");
+    }
+    scoreLead();
+    ai.state.leadScore = 'HOT';
+    await presentWhatsAppHandoff();
+    return;
+  }
+  if (detectUnverifiedTopic(text)){
+    await aiBotMessage("That's something Alessandro or the team would be better able to confirm after learning more about your project. Want me to connect you with him directly?");
+    aiQuickReplies(['Yes, connect me','Continue chatting'], choice=>{
+      if(choice.startsWith('Yes')){ ai.state.leadScore='HOT'; presentWhatsAppHandoff(); }
+      else { aiBotMessage("Sure — what else can I help with?"); }
+    });
+    return;
+  }
+
+  switch(ai.state.step){
+    case 'description':
+      ai.state.description = text;
+      await askZip();
+      break;
+    case 'zip':
+      ai.state.zip = text;
+      await askPropertyType();
+      break;
+    case 'name':
+      ai.state.name = text;
+      await askPhoneNum();
+      break;
+    case 'phone':
+      ai.state.phone = text;
+      await askEmail();
+      break;
+    case 'email':
+      ai.state.email = text;
+      await finishQualification();
+      break;
+    default:
+      // Generic contextual reply grounded only in verified knowledge base.
+      await aiRespondGeneric(text);
+  }
+}
+
+async function aiRespondGeneric(text){
+  const t = text.toLowerCase();
+  if (/service|offer|do you do/.test(t)){
+    await aiBotMessage(`We handle ${knowledgeBase.services.join(', ')}. Which of these fits what you're planning?`);
+    aiQuickReplies(['Kitchen','Bathroom','Flooring','Painting','Complete Remodel','New Construction'], handleProjectType);
+    return;
+  }
+  if (/experience|how long|years/.test(t)){
+    await aiBotMessage(`Soares Remodeling has ${knowledgeBase.experience}, and we're ${knowledgeBase.status.toLowerCase()}. What are you thinking about renovating?`);
+    return;
+  }
+  if (/area|location|where/.test(t)){
+    await aiBotMessage(`We proudly serve homeowners throughout ${knowledgeBase.serviceArea}. What ZIP code is your property in?`);
+    return;
+  }
+  await aiBotMessage("Got it. To point you in the right direction — what are you thinking about renovating: kitchen, bathroom, flooring, painting, or something bigger?");
+  aiQuickReplies(['Kitchen','Bathroom','Flooring','Painting','Complete Remodel','New Construction','Something Else'], handleProjectType);
+}
+
+aiSend.addEventListener('click', ()=>{
+  const v = aiInput.value.trim();
+  if(v) handleFreeText(v);
+});
+aiInput.addEventListener('keydown', e=>{
+  if(e.key === 'Enter'){ const v = aiInput.value.trim(); if(v) handleFreeText(v); }
+});
+
+/* ==================================================================
+   OPTIONAL: real backend hook (disabled by default).
+   Swap the rule-based flow above for this call to use a live LLM with
+   the verified knowledge base as system context. Keep all secrets
+   server-side — never place API keys in this file.
+   ================================================================== */
+async function callAssistantBackend(userMessage, conversationHistory){
+  // const res = await fetch('/api/ai-assistant', {
+  //   method: 'POST',
+  //   headers: {'Content-Type':'application/json'},
+  //   body: JSON.stringify({ message: userMessage, history: conversationHistory, knowledgeBase })
+  // });
+  // const data = await res.json();
+  // return data.reply;
+  return null; // not active — rule-based flow is used instead
+}
+</script>
+</body>
+</html>
