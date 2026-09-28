@@ -7,6 +7,34 @@
 <meta name="description" content="Transform your home with Soares Remodeling. Kitchen remodeling, bathroom remodeling, flooring, painting and construction services backed by 20 years serving South Florida. Licensed & insured. Request a free estimate.">
 <meta name="theme-color" content="#0B1F3A">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18404914475"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18404914475');
+</script>
+
+<!-- Event snippet for Enviar formulário de lead conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18404914475/1P57CNPc8IQdEKvqkshE',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <!-- Open Graph -->
 <meta property="og:title" content="Soares Remodeling | Home Remodeling & Construction in South Florida">
 <meta property="og:description" content="20 years serving South Florida. Kitchens, bathrooms, flooring, painting, full remodels & new construction. Licensed & insured. Free estimates.">
@@ -1040,6 +1068,11 @@ function trackEvent(eventName, params){
   window.dataLayer.push(Object.assign({event:eventName}, params));
   if (typeof window.gtag === 'function') window.gtag('event', eventName, params);
   if (typeof window.fbq === 'function') window.fbq('trackCustom', eventName, params);
+  // Google Ads conversion tracking — fires on the two real lead actions:
+  // submitting the estimate form and clicking to call.
+  if ((eventName === 'estimate_form_submit' || eventName === 'phone_click') && typeof window.gtag_report_conversion === 'function') {
+    window.gtag_report_conversion();
+  }
   // console.debug('[track]', eventName, params);
 }
 document.addEventListener('click', function(e){
